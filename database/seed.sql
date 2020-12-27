@@ -1,3 +1,4 @@
+-- Necessary to allow connection through the Python package `mysqlclient` which does not seem to support the default authentication mechanism (i.e., `caching_sha2_password`).
 ALTER USER 'developer'@'%' IDENTIFIED WITH mysql_native_password BY '3AMTf?DcXxpczeaUPx2_?tTethw4aFmF';
 
 CREATE TABLE `Manufacturer` (
