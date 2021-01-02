@@ -3,10 +3,12 @@ services:
   backend:
     build:
       context: ./backend
+    container_name: mysql-migration_backend
     depends_on:
       - database
   database:
     build:
       context: ./database
+    container_name: mysql-migration_database
     ports:
       - "3306:3306"
