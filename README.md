@@ -72,4 +72,4 @@ mysql-migration_backend_1 exited with code 0
 
 ## Inspecting the Data Model
 
-After bringing up the Docker containers, you can verify the successful migration by connecting to the database and inspecting the table `Car`. In addition to the columns `ID`, `Manufacturer`, and `Model`, there is now also a column `Horsepower` which we created as part of [the migration](https://github.com/dnlfrst/migrate-dockerized-database/blob/7866a2abd81992779cff6bbafcefb85051b03823/backend/migrations/versions/9feec6f6f0c4_add_car_s_horse_power.py#L20).
+After bringing up the Docker containers, you can verify the successful migration by connecting to the database and inspecting the table `Car`. In addition to the columns `ID`, `Manufacturer`, and `Model`, there is now also a column `Horsepower` which we created as part of [the migration](https://github.com/dnlfrst/migrate-dockerized-database/blob/587cd0428e91c0d5b7d755882d091dc2804f24e2/backend/migrations/versions/9669e7426172_add_car_s_horsepower.py#L20).
