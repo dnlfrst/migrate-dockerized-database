@@ -1,6 +1,6 @@
 # Migrating a dockerized MySQL database with SQLAlchemy and Alembic in Python
 
-This is a minimal repository that showcases the migration (i.e., alteration of data models in a (MySQL) database) of a dockerized MySQL database using SQLAlchemy and Alembic in Python. For an in-depth explanation, refer to the corresponding blog post on [dev.to]().
+This is a minimal repository that showcases the migration (i.e., alteration of data models in a (MySQL) database) of a dockerized MySQL database using SQLAlchemy and Alembic in Python. For an in-depth explanation, refer to the corresponding blog post on [dev.to](https://dev.to/dnlfrst/migration-of-a-dockerized-mysql-database-with-sqlalchemy-and-alembic-9i6).
 
 ## Running the Application
 
