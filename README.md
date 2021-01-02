@@ -16,59 +16,60 @@ After the creation of the database, the backend executes the migration which sho
 <summary>Terminal</summary>
 
 ```bash
-mysql-migration_database | 2021-01-02 11:54:12+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.22-1debian10 started.
-mysql-migration_database | 2021-01-02 11:54:12+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
-mysql-migration_database | 2021-01-02 11:54:12+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.22-1debian10 started.
-mysql-migration_database | 2021-01-02 11:54:12+00:00 [Note] [Entrypoint]: Initializing database files
-mysql-migration_database | 2021-01-02T11:54:12.408925Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.22) initializing of server in progress as process 45
-mysql-migration_database | 2021-01-02T11:54:12.414030Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-mysql-migration_database | 2021-01-02T11:54:13.185594Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-mysql-migration_database | 2021-01-02T11:54:15.864960Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.mysql-migration_database | 2021-01-02 11:54:20+00:00 [Note] [Entrypoint]: Database files initialized
-mysql-migration_database | 2021-01-02 11:54:20+00:00 [Note] [Entrypoint]: Starting temporary server
-mysql-migration_database | 2021-01-02T11:54:20.633655Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.22) starting as process 90
-mysql-migration_database | 2021-01-02T11:54:20.654049Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-mysql-migration_database | 2021-01-02T11:54:20.836966Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-mysql-migration_database | 2021-01-02T11:54:20.946785Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
-mysql-migration_database | 2021-01-02T11:54:21.118201Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-mysql-migration_database | 2021-01-02T11:54:21.118396Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-mysql-migration_database | 2021-01-02T11:54:21.122951Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-mysql-migration_database | 2021-01-02T11:54:21.139846Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.22'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
-mysql-migration_database | 2021-01-02 11:54:21+00:00 [Note] [Entrypoint]: Temporary server started.
-mysql-migration_database | Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
-mysql-migration_database | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
-mysql-migration_database | Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
-mysql-migration_database | Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
-mysql-migration_database | 2021-01-02 11:54:23+00:00 [Note] [Entrypoint]: GENERATED ROOT PASSWORD: IepahPoh3Xub2unguMoar0aicohB9ahd
-mysql-migration_database | 2021-01-02 11:54:23+00:00 [Note] [Entrypoint]: Creating database cars
-mysql-migration_database | 2021-01-02 11:54:24+00:00 [Note] [Entrypoint]: Creating user developer
-mysql-migration_database | 2021-01-02 11:54:24+00:00 [Note] [Entrypoint]: Giving user developer access to schema cars
-mysql-migration_database | 
-mysql-migration_database | 2021-01-02 11:54:24+00:00 [Note] [Entrypoint]: /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/seed.sql
-mysql-migration_database |
-mysql-migration_database |
-mysql-migration_database | 2021-01-02 11:54:24+00:00 [Note] [Entrypoint]: Stopping temporary server
-mysql-migration_database | 2021-01-02T11:54:24.191434Z 14 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.22).
-mysql-migration_database | 2021-01-02T11:54:26.222404Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.22)  MySQL Community Server - GPL.
-mysql-migration_database | 2021-01-02 11:54:27+00:00 [Note] [Entrypoint]: Temporary server stopped
-mysql-migration_database |
-mysql-migration_database | 2021-01-02 11:54:27+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
-mysql-migration_database |
-mysql-migration_database | 2021-01-02T11:54:27.434212Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.22) starting as process 1
-mysql-migration_database | 2021-01-02T11:54:27.445186Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
-mysql-migration_database | 2021-01-02T11:54:27.602223Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
-mysql-migration_database | 2021-01-02T11:54:27.702788Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
-mysql-migration_database | 2021-01-02T11:54:27.818436Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
-mysql-migration_database | 2021-01-02T11:54:27.818613Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
-mysql-migration_database | 2021-01-02T11:54:27.822875Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
-mysql-migration_database | 2021-01-02T11:54:27.839703Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.22'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
-mysql-migration_database | mbind: Operation not permitted
-mysql-migration_backend | INFO  [alembic.runtime.migration] Context impl MySQLImpl.
-mysql-migration_backend | INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
-mysql-migration_backend | INFO  [alembic.runtime.migration] Running upgrade  -> 9feec6f6f0c4, Add Car's Horse Power
-mysql-migration_backend exited with code 0
+database_1  | 2021-01-02 15:10:20+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.22-1debian10 started.
+database_1  | 2021-01-02 15:10:21+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+database_1  | 2021-01-02 15:10:21+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.22-1debian10 started.
+database_1  | 2021-01-02 15:10:21+00:00 [Note] [Entrypoint]: Initializing database files
+database_1  | 2021-01-02T15:10:21.128699Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.22) initializing of server in progress as process 46
+database_1  | 2021-01-02T15:10:21.134926Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+database_1  | 2021-01-02T15:10:21.710354Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+database_1  | 2021-01-02T15:10:23.162961Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+database_1  | 2021-01-02 15:10:26+00:00 [Note] [Entrypoint]: Database files initialized
+database_1  | 2021-01-02 15:10:26+00:00 [Note] [Entrypoint]: Starting temporary server
+database_1  | 2021-01-02T15:10:26.486959Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.22) starting as process 91
+database_1  | 2021-01-02T15:10:26.531262Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+database_1  | 2021-01-02T15:10:26.855056Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+database_1  | 2021-01-02T15:10:27.008074Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+database_1  | 2021-01-02T15:10:27.264832Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+database_1  | 2021-01-02T15:10:27.265078Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+database_1  | 2021-01-02T15:10:27.268176Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+database_1  | 2021-01-02T15:10:27.315866Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.22'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+database_1  | 2021-01-02 15:10:27+00:00 [Note] [Entrypoint]: Temporary server started.
+database_1  | Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+database_1  | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+database_1  | Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+database_1  | Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+database_1  | 2021-01-02 15:10:31+00:00 [Note] [Entrypoint]: GENERATED ROOT PASSWORD: buH0nai4ahz5ahdoh2phiXah7Chasha1
+database_1  | 2021-01-02 15:10:31+00:00 [Note] [Entrypoint]: Creating database cars
+database_1  | 2021-01-02 15:10:31+00:00 [Note] [Entrypoint]: Creating user developer
+database_1  | 2021-01-02 15:10:31+00:00 [Note] [Entrypoint]: Giving user developer access to schema cars
+database_1  | 
+database_1  | 2021-01-02 15:10:31+00:00 [Note] [Entrypoint]: /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/seed.sql
+database_1  | 
+database_1  | 
+database_1  | 2021-01-02 15:10:31+00:00 [Note] [Entrypoint]: Stopping temporary server
+database_1  | 2021-01-02T15:10:31.155633Z 14 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.22).
+database_1  | 2021-01-02T15:10:32.783543Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.22)  MySQL Community Server - GPL.
+database_1  | 2021-01-02 15:10:33+00:00 [Note] [Entrypoint]: Temporary server stopped
+database_1  | 
+database_1  | 2021-01-02 15:10:33+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+database_1  | 
+database_1  | 2021-01-02T15:10:33.394614Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.22) starting as process 1
+database_1  | 2021-01-02T15:10:33.402355Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+database_1  | 2021-01-02T15:10:33.602351Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+database_1  | 2021-01-02T15:10:33.711959Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+database_1  | 2021-01-02T15:10:33.787515Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+database_1  | 2021-01-02T15:10:33.787710Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+database_1  | 2021-01-02T15:10:33.790638Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+database_1  | 2021-01-02T15:10:33.815348Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.22'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+database_1  | mbind: Operation not permitted
+backend_1   | INFO  [alembic.runtime.migration] Context impl MySQLImpl.
+backend_1   | INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+backend_1   | INFO  [alembic.runtime.migration] Running upgrade  -> 9669e7426172, Add Car's Horsepower
+mysql-migration_backend_1 exited with code 0
 ```
 </details>
 
 ## Inspecting the Data Model
 
-After bringing up the Docker containers, you can verify the successful migration by connecting to the database and inspecting the table `Car`. In addition to the columns `ID`, `Manufacturer`, and `Model`, there is now also a column `Horse Power` which we created as part of [the migration](https://github.com/dnlfrst/migrate-dockerized-database/blob/7866a2abd81992779cff6bbafcefb85051b03823/backend/migrations/versions/9feec6f6f0c4_add_car_s_horse_power.py#L20).
+After bringing up the Docker containers, you can verify the successful migration by connecting to the database and inspecting the table `Car`. In addition to the columns `ID`, `Manufacturer`, and `Model`, there is now also a column `Horsepower` which we created as part of [the migration](https://github.com/dnlfrst/migrate-dockerized-database/blob/7866a2abd81992779cff6bbafcefb85051b03823/backend/migrations/versions/9feec6f6f0c4_add_car_s_horse_power.py#L20).
